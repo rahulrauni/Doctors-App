@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/docnameText"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Doctor Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/docprofText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/docprofText"
+        android:layout_width="368dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="462dp"
+        android:ems="10"
+        android:hint="Doctor Category"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docnameText" />
+
+    <EditText
+        android:id="@+id/descriptionText"
+        android:layout_width="364dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="21dp"
+        android:ems="10"
+        android:hint="Doctor Description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docprofText" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="363dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="45dp"
+        android:text="upload"
+        app:layout_constraintBottom_toTopOf="@+id/pendingAppointButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    <Button
+        android:id="@+id/pendingAppointButton"
+        android:layout_width="379dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="45dp"
+        android:text="see pending appointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadButton" />
+
+    <Button
+        android:id="@+id/confirmAppointButton"
+        android:layout_width="363dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="63dp"
+        android:text="see confirmd appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pendingAppointButton" />
+
+    <RadioGroup
+        android:id="@+id/availabilitygroupButton"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/uploadButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText">
+
+        <RadioButton
+            android:id="@+id/avaialbleButton"
+            android:layout_width="181dp"
+            android:layout_height="46dp"
+            android:text="Available" />
+
+        <RadioButton
+            android:id="@+id/notAvailableButton"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:text="Not Available" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
